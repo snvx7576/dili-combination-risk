@@ -342,21 +342,111 @@ def _chart(times, L, contrib, markers, windows):
     return fig
 
 
+# ------------------------------------------------- people-first layer
+
+def _human_duration(hours):
+    """4.7 -> '4 hours 42 minutes'; 0.3 -> 'about 18 minutes'."""
+    if hours <= 0:
+        return "no time"
+    h = int(hours)
+    m = int(round((hours - h) * 60))
+    if m == 60:
+        h, m = h + 1, 0
+    parts = []
+    if h:
+        parts.append(f"{h} hour" + ("s" if h != 1 else ""))
+    if m:
+        parts.append(f"{m} minute" + ("s" if m != 1 else ""))
+    return " ".join(parts) if parts else "under a minute"
+
+
+def _verdict(lmax):
+    """(level, colour, headline) for a peak load."""
+    if lmax >= THRESHOLD:
+        return "HIGH", "#c62828", "HIGH liver stress"
+    if lmax >= 0.4:
+        return "MODERATE", "#ef6c00", "MODERATE liver stress"
+    return "LOW", "#2e7d32", "LOW liver stress"
+
+
+def _timeline_html(times, L):
+    """24 h strip: green safe, amber elevated, red danger."""
+    segs = []
+    def cls(v):
+        return 2 if v >= THRESHOLD else (1 if v >= 0.4 else 0)
+    start, cur = 0, cls(L[0])
+    for i in range(1, len(L)):
+        if cls(L[i]) != cur:
+            segs.append((times[start], times[i - 1], cur))
+            start, cur = i, cls(L[i])
+    segs.append((times[start], times[-1], cur))
+    colours = {0: "#43a047", 1: "#fb8c00", 2: "#c62828"}
+    parts = ['<div style="display:flex;height:30px;border-radius:8px;'
+             'overflow:hidden;border:1px solid rgba(128,128,128,.4);">']
+    for a, b, c in segs:
+        w = max((b - a) / T_END * 100.0, 0.4)
+        parts.append(f'<div style="width:{w:.2f}%;background:'
+                     f'{colours[c]};"></div>')
+    parts.append("</div>")
+    parts.append(
+        '<div style="display:flex;justify-content:space-between;'
+        'font-size:11px;opacity:.7;margin-top:4px;"><span>First dose '
+        'taken</span><span>6 h</span><span>12 h</span><span>18 h</span>'
+        '<span>24 h</span></div>')
+    parts.append(
+        '<div style="font-size:12px;margin-top:8px;">'
+        '<span style="color:#c62828;">&#9632;</span> Danger hours &nbsp;'
+        '<span style="color:#fb8c00;">&#9632;</span> Raised stress &nbsp;'
+        '<span style="color:#43a047;">&#9632;</span> Safe hours</div>')
+    return "".join(parts)
+
+
+def _stagger_advice(regimen, cur_lmax):
+    """Search single-drug delays; return the best plain-language advice.
+
+    Tries delaying each drug on its own by 0.5 to 12 h. Prefers the
+    smallest delay that brings the peak below the danger line; if no
+    delay gets there, returns the delay with the lowest peak.
+    Returns (drug display, delay h, new Lmax, new hours above) or None.
+    """
+    if len(regimen) < 2 or cur_lmax < THRESHOLD:
+        return None
+    best_clear = None   # (delay, idx, lmax, above)
+    best_any = None     # (lmax, delay, idx, above)
+    for idx in range(len(regimen)):
+        for step in range(1, 25):
+            d = step * 0.5
+            trial = [dict(e) for e in regimen]
+            trial[idx]["offset"] = trial[idx]["offset"] + d
+            _t, L2, _c, _m = compute_load(trial)
+            lm2, _tp, _auc, ab2 = metrics(_t, L2)
+            if lm2 < THRESHOLD and (best_clear is None
+                                    or d < best_clear[0]):
+                best_clear = (d, idx, lm2, ab2)
+            if best_any is None or lm2 < best_any[0]:
+                best_any = (lm2, d, idx, ab2)
+    if best_clear is not None:
+        d, idx, lm2, ab2 = best_clear
+        return (DRUGS[regimen[idx]["drug_key"]]["display"], d, lm2, ab2)
+    if best_any is not None and best_any[0] < cur_lmax - 1e-9:
+        lm2, d, idx, ab2 = best_any
+        return (DRUGS[regimen[idx]["drug_key"]]["display"], d, lm2, ab2)
+    return None
+
+
 def main():
     st.set_page_config(page_title="Temporal Hepatotoxic Load - Demo",
                        layout="wide")
     st.title("Temporal Hepatotoxic Load Explorer")
-    st.warning(
+    st.caption(
         "Research prototype only. Not for clinical decision-making. "
-        "Outputs are model scores built from public data (DILIrank 2.0, "
-        "FAERS, published pharmacokinetics); they are associative, "
-        "not causal, and are not a patient's risk.")
+        "Scores are model estimates from public data (DILIrank 2.0, "
+        "FAERS, published pharmacokinetics), not a patient's risk.")
 
     st.markdown(
-        "Build a regimen row by row: pick a drug, enter the single-dose "
-        "strength in mg and how many times a day it is taken. The engine "
-        "sums every dose over 24 hours, so peaks that overlap in time "
-        "add up, and the same drugs staggered in time score lower.")
+        "Add your medicines below, with the dose in mg and how many "
+        "times a day each is taken. You get one clear answer: how much "
+        "stress the combination puts on the liver, and when.")
 
     _init_state()
     _render_rows()
@@ -373,90 +463,188 @@ def main():
             st.rerun()
 
     regimen, warnings = _collect_regimen()
-    for w in warnings:
-        st.warning(w)
-    met_flags = [e for e in regimen
-                 if DRUGS[e["drug_key"]].get("toxic_metabolite")]
-    for e in met_flags:
-        d = DRUGS[e["drug_key"]]
-        tm = d["toxic_metabolite"]
-        st.warning(
-            f"Toxic metabolite (List C): {d['display']} forms "
-            f"{tm['name']}"
-            + (f" via {tm['enzyme']}" if tm["enzyme"] else "")
-            + (", which is more toxic than the parent drug."
-               if tm["more_toxic"] == "YES" else ".")
-            + " This flag is shown as information; metabolite danger "
-              "points are not yet added to the load curve.")
     if len(regimen) < 1:
         st.info("Select at least one drug with a strength above 0 mg "
-                "to compute the combined load.")
+                "to see the result.")
         return
 
     times, L, contrib, markers = compute_load(regimen)
     lmax, t_peak, auc, time_above = metrics(times, L)
     windows = danger_windows(times, L)
+    level, colour, headline = _verdict(lmax)
 
-    m1, m2, m3, m4 = st.columns(4)
-    m1.metric("Peak load Lmax", f"{lmax:.3f}")
-    m2.metric("Time of peak (h)", f"{t_peak:.2f}")
-    m3.metric("Toxic AUC (0-24 h)", f"{auc:.3f}")
-    m4.metric(f"Hours above threshold {THRESHOLD}", f"{time_above:.2f}")
-
-    if windows:
-        win_txt = "; ".join(f"{a:.2f} to {b:.2f} h" for a, b in windows)
-        st.error(f"Danger window(s), L(t) at or above {THRESHOLD}: "
-                 f"{win_txt}")
+    # ---- Design A: verdict card -------------------------------------
+    if level == "HIGH":
+        sentence = (
+            "Taken together, these medicines push the liver into the "
+            f"danger zone for about {_human_duration(time_above)}.")
+    elif level == "MODERATE":
+        sentence = (
+            "Together these medicines cause noticeable liver stress. "
+            "The stress stays below the danger line, peaking about "
+            f"{_human_duration(t_peak)} after the first dose.")
     else:
-        st.success(f"L(t) never reaches the danger threshold "
-                   f"({THRESHOLD}) for this regimen.")
+        sentence = (
+            "Together these medicines cause only low liver stress, "
+            "well below the danger line at all times.")
+    meter_pct = min(lmax / 2.0, 1.0) * 100.0
+    st.markdown(
+        f'<div style="background:{colour};color:#ffffff;border-radius:'
+        f'14px 14px 0 0;padding:16px 20px;">'
+        f'<div style="font-size:28px;font-weight:800;">{headline}</div>'
+        f'<div style="font-size:15px;opacity:.95;">{sentence}</div>'
+        f'</div>',
+        unsafe_allow_html=True)
+    card = ['<div style="border:1px solid rgba(128,128,128,.4);'
+            'border-top:none;border-radius:0 0 14px 14px;'
+            'padding:14px 20px 18px;">']
+    card.append('<div style="font-size:12px;opacity:.7;">LIVER STRESS '
+                'METER</div>')
+    card.append(
+        '<div style="position:relative;height:14px;border-radius:7px;'
+        'margin-top:6px;background:linear-gradient(90deg,#43a047 0%,'
+        '#fdd835 55%,#c62828 100%);">'
+        f'<div style="position:absolute;left:{meter_pct:.0f}%;top:-5px;'
+        'width:4px;height:24px;background:#888;border-radius:2px;">'
+        '</div></div>')
+    card.append('<div style="display:flex;justify-content:space-between;'
+                'font-size:11px;opacity:.7;margin-top:4px;"><span>Low'
+                '</span><span>Medium</span><span>High</span></div>')
+    imax = int(np.argmax(np.asarray(L, dtype=float)))
+    shares = []
+    for e, (key, curve) in zip(regimen, contrib):
+        v = curve[imax]
+        shares.append((v, DRUGS[key]["display"]))
+    shares.sort(reverse=True)
+    card.append('<div style="font-size:12px;opacity:.7;margin-top:14px;">'
+                'HOW MUCH EACH MEDICINE ADDS AT THE WORST MOMENT</div>')
+    for v, name in shares:
+        if lmax <= 0 or v <= 0:
+            tag, wdt = "no effect", 0.0
+        else:
+            share = v / lmax
+            wdt = share * 100.0
+            tag = ("the main driver" if share >= 0.5 else
+                   "adds a lot" if share >= 0.25 else "adds a little")
+        short = name.split(",")[0]
+        card.append(
+            f'<div style="font-size:13px;margin-top:7px;">{short} '
+            f'<span style="display:inline-block;vertical-align:middle;'
+            f'width:{max(wdt, 1.5):.0f}%;max-width:55%;height:10px;'
+            f'background:{colour};border-radius:5px;margin:0 8px;">'
+            f'</span> {tag}</div>')
+    card.append("</div>")
+    st.markdown("".join(card), unsafe_allow_html=True)
 
-    st.plotly_chart(_chart(times, L, contrib, markers, windows),
-                    use_container_width=True)
-    dose_note = "; ".join(
-        f"{DRUGS[e['drug_key']]['display'].split(',')[0]} at "
-        + ", ".join(f"{t:g} h" for t in dose_times(e["freq"],
-                                                   e["offset"]))
-        for e in regimen)
-    st.caption(f"Dose times: {dose_note}. Dotted lines on the chart "
-               f"mark each administration.")
+    # ---- Design B: your day, plus what to do -------------------------
+    st.subheader("Your day, hour by hour")
+    st.markdown(_timeline_html(times, L), unsafe_allow_html=True)
+    if windows:
+        win_txt = "; ".join(
+            f"from about {_human_duration(a)} to about "
+            f"{_human_duration(b)} after the first dose"
+            for a, b in windows)
+        st.markdown(f"**Danger time:** {win_txt}.")
+    else:
+        st.markdown("**No danger time:** the stress never reaches the "
+                    "danger line in 24 hours.")
+    advice = _stagger_advice(regimen, lmax)
+    if advice is not None:
+        name, delay, new_lmax, new_above = advice
+        short = name.split(",")[0]
+        if new_above <= 0:
+            effect = "the danger time disappears completely"
+        else:
+            effect = (f"the danger time shrinks to about "
+                      f"{_human_duration(new_above)}")
+        if new_above <= 0:
+            intro = "One change that helps a lot"
+            tail = ""
+        else:
+            intro = "One change that helps"
+            tail = (" The combination still enters the danger zone, "
+                    "because one of these medicines reaches the danger "
+                    "line on its own at this dose.")
+        st.success(
+            f"{intro}: take **{short}** about "
+            f"**{_human_duration(delay)} later** than the other "
+            f"medicine(s). The peak stress falls from {lmax:.2f} to "
+            f"{new_lmax:.2f}, and {effect}.{tail} Please speak to a "
+            f"doctor or pharmacist before changing how you take any "
+            f"medicine.")
 
-    st.subheader("Per-drug detail")
-    rows = []
+    # ---- Notes, tucked aside -----------------------------------------
+    notes = list(warnings)
     for e in regimen:
         d = DRUGS[e["drug_key"]]
-        rows.append({
-            "Drug": d["display"],
-            "Strength (mg)": e["strength_mg"],
-            "Dose fraction F": round(e["fraction"], 3),
-            "Frequency (/24 h)": e["freq"],
-            "Offset (h)": e["offset"],
-            "Tmax (h)": d["tmax"] if d["tmax"] is not None else "n/a",
-            "Half-life (h)":
-                d["half_life"] if d["half_life"] is not None else "n/a",
-            "SeverityClass": d["severity"],
-            "DILIrank concern": d["concern"],
-            "Hazard H": round(hazard(d), 4),
-            "Formulation": d.get("formulation", ""),
-            "Main enzymes": d.get("enzymes", ""),
-            "Toxic metabolite": (d["toxic_metabolite"]["name"]
-                                 if d.get("toxic_metabolite") else ""),
-            "Structural alert note": d["alert_note"],
-        })
-    st.dataframe(pd.DataFrame(rows), use_container_width=True)
+        tm = d.get("toxic_metabolite")
+        if tm:
+            notes.append(
+                f"Toxic metabolite: {d['display'].split(',')[0]} forms "
+                f"{tm['name']}"
+                + (f" via {tm['enzyme']}" if tm["enzyme"] else "")
+                + (", more toxic than the parent drug."
+                   if tm["more_toxic"] == "YES" else ".")
+                + " Shown as information; metabolite points are not "
+                  "added to the score yet.")
+    if notes:
+        with st.expander("Notes"):
+            for n in notes:
+                st.markdown(f"- {n}")
+
+    # ---- The science, one tap away ------------------------------------
+    with st.expander("See the science (graph, numbers, per-drug detail)"):
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("Peak load Lmax", f"{lmax:.3f}")
+        m2.metric("Time of peak (h)", f"{t_peak:.2f}")
+        m3.metric("Toxic AUC (0-24 h)", f"{auc:.3f}")
+        m4.metric(f"Hours above threshold {THRESHOLD}",
+                  f"{time_above:.2f}")
+        st.plotly_chart(_chart(times, L, contrib, markers, windows),
+                        use_container_width=True)
+        dose_note = "; ".join(
+            f"{DRUGS[e['drug_key']]['display'].split(',')[0]} at "
+            + ", ".join(f"{t:g} h" for t in dose_times(e["freq"],
+                                                       e["offset"]))
+            for e in regimen)
+        st.caption(f"Dose times: {dose_note}.")
+        st.subheader("Per-drug detail")
+        rows = []
+        for e in regimen:
+            d = DRUGS[e["drug_key"]]
+            rows.append({
+                "Drug": d["display"],
+                "Strength (mg)": e["strength_mg"],
+                "Dose fraction F": round(e["fraction"], 3),
+                "Frequency (/24 h)": e["freq"],
+                "Offset (h)": e["offset"],
+                "Tmax (h)": d["tmax"] if d["tmax"] is not None else "n/a",
+                "Half-life (h)":
+                    d["half_life"] if d["half_life"] is not None else "n/a",
+                "SeverityClass": d["severity"],
+                "DILIrank concern": d["concern"],
+                "Hazard H": round(hazard(d), 4),
+                "Formulation": d.get("formulation", ""),
+                "Main enzymes": d.get("enzymes", ""),
+                "Toxic metabolite": (d["toxic_metabolite"]["name"]
+                                     if d.get("toxic_metabolite") else ""),
+                "Structural alert note": d["alert_note"],
+            })
+        st.dataframe(pd.DataFrame(rows), use_container_width=True)
 
     st.caption(
         "Model: Layer 2 v2 of the project 'AI Framework for Multi-Drug "
         "Combination Hepatotoxicity Risk Prediction'. Hazards from "
-        "DILIrank 2.0 (FDA LTKB); pharmacokinetic fixed points from the "
-        "project PK table v0.1 (07_PK_Table_v0.1.csv, verified label "
-        "values, ranges replaced by midpoints); structural alert notes "
-        "from 08_Structure_Alert_Matches_v1.csv. Dose fractions use "
-        "standard labelled reference maxima for normalisation only and "
-        "must be re-verified against current labels before any other "
-        "use. Cyanocobalamin is the zero-hazard control: its hazard is "
-        "0, so it never changes L(t). Research prototype only, not for "
-        "clinical decision-making.")
+        "DILIrank 2.0 (FDA LTKB); pharmacokinetic values from the "
+        "project Fixed Database: PK table v1 (file 10, label-sourced "
+        "values with sources, midpoints derived where labels give "
+        "ranges), metabolite list (file 11), structural alert notes "
+        "from 08_Structure_Alert_Matches_v1.csv; the original demo "
+        "drugs keep their project-verified v0.1 fixed points. Dose "
+        "fractions use labelled reference maxima for normalisation "
+        "only. Cyanocobalamin is the zero-hazard control: its hazard "
+        "is 0, so it never changes L(t). Research prototype only, not "
+        "for clinical decision-making.")
 
 
 if __name__ == "__main__":
