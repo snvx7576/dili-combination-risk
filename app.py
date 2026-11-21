@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Layer 4 - Demo app v2: Temporal Hepatotoxic Load Explorer.
+Layer 4 - Demo app v3: Temporal Hepatotoxic Load Explorer.
 
 Self-contained Streamlit app (deployed on Streamlit Community Cloud from
 the project GitHub repo). v2 replaces the slider UI with a dynamic
@@ -59,69 +59,28 @@ FREQ_LABELS = {
     5: "5 x daily (every 4.8 h)",
 }
 
-# Reference maximum doses (mg) are standard labelled values, used only to
-# normalise the entered strength into a dose fraction. Cyanocobalamin is
-# the zero-hazard control (H = 0), so its fraction never affects the load.
-DRUGS = {
-    "acetaminophen": {
-        "display": "Acetaminophen (paracetamol), oral immediate release",
-        "tmax": 1.0, "half_life": 2.0, "severity": 5,
-        "concern": "vMost-DILI-concern", "concern_weight": 1.0,
-        "ref_max_single_mg": 1000.0, "ref_max_daily_mg": 4000.0,
-        "alert_note": "1 alert, 2 points (file 08): Phenol (quinone-imine "
-                      "precursor). Consistent with oxidation to the "
-                      "quinone-imine NAPQI.",
-    },
-    "diclofenac_sodium": {
-        "display": "Diclofenac sodium, oral delayed release",
-        "tmax": 2.0, "half_life": 1.5, "severity": 8,
-        "concern": "vMost-DILI-concern", "concern_weight": 1.0,
-        "ref_max_single_mg": 50.0, "ref_max_daily_mg": 150.0,
-        "alert_note": "0 of 13 alerts matched, 0 points (file 08). Its "
-                      "maximum DILIrank severity (8) is NOT captured by "
-                      "the alert panel: alerts are notes, not verdicts.",
-    },
-    "diclofenac_potassium": {
-        "display": "Diclofenac potassium, oral conventional",
-        "tmax": 1.0, "half_life": 1.5, "severity": 8,
-        "concern": "vMost-DILI-concern", "concern_weight": 1.0,
-        "ref_max_single_mg": 50.0, "ref_max_daily_mg": 150.0,
-        "alert_note": "Not a separate DILIrank entry; hazard and alerts "
-                      "taken from the diclofenac (sodium salt) entry, "
-                      "which matched 0 of 13 alerts (file 08). Only the "
-                      "formulation PK differs (Tmax 1 h vs 2 h).",
-    },
-    "aspirin": {
-        "display": "Aspirin (modelled as salicylate)",
-        "tmax": 1.74, "half_life": 2.0, "severity": 0,
-        "concern": "vLess-DILI-concern", "concern_weight": 0.6,
-        "ref_max_single_mg": 1000.0, "ref_max_daily_mg": 4000.0,
-        "alert_note": "1 alert, 2 points (file 08): Carboxylic acid (acyl "
-                      "glucuronide precursor). SeverityClass is 0, so the "
-                      "v1 hazard weight is 0 despite the alert.",
-    },
-    "rabeprazole": {
-        "display": "Rabeprazole sodium, oral delayed release",
-        "tmax": 3.5, "half_life": 1.0, "severity": 3,
-        "concern": "vLess-DILI-concern", "concern_weight": 0.6,
-        "ref_max_single_mg": 20.0, "ref_max_daily_mg": 20.0,
-        "alert_note": "0 of 13 alerts matched, 0 points (file 08, as "
-                      "rabeprazole sodium).",
-    },
-    "cyanocobalamin": {
-        "display": "Cyanocobalamin (vitamin B12), zero-hazard control",
-        "tmax": None, "half_life": None, "severity": 0,
-        "concern": "vNo-DILI-concern", "concern_weight": 0.25,
-        "ref_max_single_mg": None, "ref_max_daily_mg": None,
-        "alert_note": "File 08 flags 1 alert, 2 points: Furan "
-                      "substructure. SeverityClass 0 and vNo give hazard "
-                      "H = 0, so its load contribution is zero at every "
-                      "time point, by construction. It is the project's "
-                      "control drug: adding or removing it must never "
-                      "change the result.",
-    },
-}
+# ------------------------------------------------------------ drug data
+# v3: the drug library is data-driven. drugs_data.json sits next to this
+# file in the repo and is built by code/build_app_data.py from the Fixed
+# Database: 01 DILIrank labels, 08 alert matches, 10 PK table v1
+# (label-sourced, returned research, Cooper-verified, midpoints of label
+# ranges derived and flagged at build time), 11 metabolites v1.
+# Project-verified v0.1 fixed points override returned values for the
+# original demo drugs, keeping the published Layer 2 scenarios exact.
+import json
+import os
 
+
+@st.cache_data
+def _load_drugs():
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        "drugs_data.json")
+    with open(path) as f:
+        return json.load(f)["drugs"]
+
+
+DRUGS = _load_drugs()
+DRUG_KEYS = sorted(DRUGS.keys(), key=lambda k: DRUGS[k]["display"].lower())
 
 # ---------------------------------------------------------------- model
 
@@ -183,7 +142,7 @@ def compute_load(regimen):
     """
     n = int(T_END / DT) + 1
     times = [round(i * DT, 10) for i in range(n)]
-    contrib = {}
+    contrib = []
     markers = []
     for entry in regimen:
         drug = DRUGS[entry["drug_key"]]
@@ -192,7 +151,7 @@ def compute_load(regimen):
         ts = dose_times(entry["freq"], entry["offset"])
         markers.extend((tk, drug["display"]) for tk in ts if tk <= T_END)
         if h == 0.0 or drug["tmax"] is None:
-            contrib[entry["drug_key"]] = [0.0] * n
+            contrib.append((entry["drug_key"], [0.0] * n))
             continue
         curve = []
         for t in times:
@@ -202,8 +161,8 @@ def compute_load(regimen):
                     total += bateman(drug["tmax"], drug["half_life"],
                                      t - tk)
             curve.append(h * frac * total)
-        contrib[entry["drug_key"]] = curve
-    L = [sum(contrib[k][i] for k in contrib) for i in range(n)]
+        contrib.append((entry["drug_key"], curve))
+    L = [sum(c[i] for _k, c in contrib) for i in range(n)]
     return times, L, contrib, markers
 
 
@@ -252,7 +211,7 @@ def _init_state():
     if "row_ids" not in st.session_state:
         st.session_state.row_ids = []
         st.session_state.row_ids.append(_new_row("acetaminophen"))
-        st.session_state.row_ids.append(_new_row("diclofenac_sodium"))
+        st.session_state.row_ids.append(_new_row("diclofenac sodium"))
 
 
 def _on_drug_change(rid):
@@ -269,7 +228,7 @@ def _reset():
             st.session_state.pop(prefix + rid, None)
     st.session_state.row_ids = []
     st.session_state.row_ids.append(_new_row("acetaminophen"))
-    st.session_state.row_ids.append(_new_row("diclofenac_sodium"))
+    st.session_state.row_ids.append(_new_row("diclofenac sodium"))
 
 
 # ------------------------------------------------------------------ UI
@@ -284,7 +243,7 @@ def _render_rows():
         c1, c2, c3, c4 = st.columns([3.5, 2, 2.5, 0.8])
         with c1:
             st.selectbox(
-                "Drug", options=[None] + list(DRUGS.keys()),
+                "Drug", options=[None] + DRUG_KEYS,
                 format_func=lambda k: ("Search and select a drug..."
                                        if k is None
                                        else DRUGS[k]["display"]),
@@ -355,7 +314,7 @@ def _collect_regimen():
 
 def _chart(times, L, contrib, markers, windows):
     fig = go.Figure()
-    for key, curve in contrib.items():
+    for key, curve in contrib:
         fig.add_trace(go.Scatter(
             x=times, y=curve, mode="lines",
             name=DRUGS[key]["display"], opacity=0.55,
@@ -416,6 +375,19 @@ def main():
     regimen, warnings = _collect_regimen()
     for w in warnings:
         st.warning(w)
+    met_flags = [e for e in regimen
+                 if DRUGS[e["drug_key"]].get("toxic_metabolite")]
+    for e in met_flags:
+        d = DRUGS[e["drug_key"]]
+        tm = d["toxic_metabolite"]
+        st.warning(
+            f"Toxic metabolite (List C): {d['display']} forms "
+            f"{tm['name']}"
+            + (f" via {tm['enzyme']}" if tm["enzyme"] else "")
+            + (", which is more toxic than the parent drug."
+               if tm["more_toxic"] == "YES" else ".")
+            + " This flag is shown as information; metabolite danger "
+              "points are not yet added to the load curve.")
     if len(regimen) < 1:
         st.info("Select at least one drug with a strength above 0 mg "
                 "to compute the combined load.")
@@ -465,6 +437,10 @@ def main():
             "SeverityClass": d["severity"],
             "DILIrank concern": d["concern"],
             "Hazard H": round(hazard(d), 4),
+            "Formulation": d.get("formulation", ""),
+            "Main enzymes": d.get("enzymes", ""),
+            "Toxic metabolite": (d["toxic_metabolite"]["name"]
+                                 if d.get("toxic_metabolite") else ""),
             "Structural alert note": d["alert_note"],
         })
     st.dataframe(pd.DataFrame(rows), use_container_width=True)
