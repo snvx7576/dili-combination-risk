@@ -1,5 +1,5 @@
 # Verification Report: Returned PK and Metabolite Data
-Checked by Cooper, 21 November 2026. Files received from Shivam (delegated research):
+ Files received :
 Hepatotoxicity_ALL_1336_PK_Parameters.csv (1,483 rows) and
 Hepatotoxicity_ALL_1336_Active_Toxic_Metabolites.csv (1,469 rows).
 
