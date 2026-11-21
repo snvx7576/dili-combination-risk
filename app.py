@@ -467,9 +467,9 @@ def _stagger_advice(regimen, cur_lmax):
 
 
 def main():
-    st.set_page_config(page_title="Temporal Hepatotoxic Load - Demo",
+    st.set_page_config(page_title="HepMAT - Multi-drug Hepatotoxicity Assessment Tool",
                        layout="wide")
-    st.title("Temporal Hepatotoxic Load Explorer")
+    st.title("HepMAT: Multi-drug Hepatotoxicity Assessment Tool")
     st.caption(
         "Research prototype only. Not for clinical decision-making. "
         "Scores are model estimates from public data (DILIrank 2.0, "
@@ -689,9 +689,11 @@ def main():
         st.dataframe(pd.DataFrame(rows), use_container_width=True)
 
     st.caption(
-        "Model: Layer 2 v2.1 (metabolite-adjusted) of the project 'AI "
-        "Framework for Multi-Drug Combination Hepatotoxicity Risk "
-        "Prediction'. Model v2.1 uplift rule: a drug whose toxic "
+        "Model: Layer 2 v2.1 (metabolite-adjusted) of HepMAT, from "
+        "the project 'An Artificial Intelligence Framework for "
+        "Multi-Drug Combination Hepatotoxicity Risk Prediction "
+        "with Machine Learning, Structural Alerts and Temporal "
+        "Pharmacokinetic Modelling'. Model v2.1 uplift rule: a drug whose toxic "
         "metabolite is more toxic than the parent has its hazard "
         "multiplied by 1.25, and a drug with any other toxic "
         "metabolite by 1.10; the adjusted hazard is capped at 1.0, so "
