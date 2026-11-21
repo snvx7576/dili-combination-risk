@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Layer 4 - Demo app v3: Temporal Hepatotoxic Load Explorer.
+Layer 4 - Demo app v5: Temporal Hepatotoxic Load Explorer.
 
 Self-contained Streamlit app (deployed on Streamlit Community Cloud from
 the project GitHub repo). v2 replaces the slider UI with a dynamic
@@ -27,12 +27,20 @@ Model (identical core to Layer 2, code/temporal_load.py):
         L_i(t) = sum_k F_i * H_i * f_i(t - t_k)   (terms with t < t_k are 0)
         L(t)   = sum_i L_i(t),  grid 0-24 h at 0.05 h steps.
   - Danger threshold 0.75, as in Layer 2.
+  - Model v2.1 metabolite adjustment (app v5): the hazard used by the
+    engine is H_adj = H x 1.25 when the drug has a toxic metabolite
+    that is more toxic than the parent, H x 1.10 when it has any other
+    toxic metabolite, otherwise H; H_adj is capped at 1.0. hazard()
+    returns H_adj; hazard_base() returns the unadjusted H, and
+    compute_load(regimen, use_adjusted=False) runs the base model.
 
 Drug PK fixed points are the Layer 2 v1 values from
 data/fixed_db/07_PK_Table_v0.1.csv (ranges replaced by the same midpoints
 Layer 2 used); alert notes from data/fixed_db/08_Structure_Alert_Matches_v1.csv.
-With every drug at F = 1, frequency 1 and offset 0, the engine reproduces
-Layer 2 scenario A exactly (Lmax 1.7356, Toxic AUC 11.0852).
+With every drug at F = 1, frequency 1 and offset 0, the base model
+(use_adjusted=False) reproduces Layer 2 scenario A exactly (Lmax
+1.7356, Toxic AUC 11.0852); the metabolite-adjusted Model v2.1 gives
+Lmax 1.8774, Toxic AUC 11.7225 for the same scenario.
 
 RESEARCH PROTOTYPE ONLY. Not for clinical decision-making. Predictions
 are associative, not causal.
@@ -84,8 +92,28 @@ DRUG_KEYS = sorted(DRUGS.keys(), key=lambda k: DRUGS[k]["display"].lower())
 
 # ---------------------------------------------------------------- model
 
-def hazard(drug) -> float:
+def hazard_base(drug) -> float:
+    """Base hazard (original Layer 2 rule, no metabolite adjustment)."""
     return (drug["severity"] / 8.0) * drug["concern_weight"]
+
+
+def metabolite_factor(drug) -> float:
+    """Model v2.1 uplift factor from the drug's toxic metabolite.
+
+    x1.25 if a toxic metabolite exists and is more toxic than the
+    parent; x1.10 if a toxic metabolite exists with any other
+    more_toxic value; 1.0 if there is no toxic metabolite.
+    """
+    tm = drug.get("toxic_metabolite")
+    if not tm:
+        return 1.0
+    return 1.25 if tm.get("more_toxic") == "YES" else 1.10
+
+
+def hazard(drug) -> float:
+    """Model v2.1 adjusted hazard: base hazard x metabolite factor,
+    capped at 1.0."""
+    return min(hazard_base(drug) * metabolite_factor(drug), 1.0)
 
 
 def solve_ka(ke: float, tmax: float) -> float:
@@ -134,8 +162,12 @@ def dose_fraction(drug, strength_mg):
     return strength_mg / ref, None
 
 
-def compute_load(regimen):
+def compute_load(regimen, use_adjusted=True):
     """regimen: list of dicts with keys drug_key, strength_mg, freq, offset.
+
+    use_adjusted=True (default) applies the Model v2.1 metabolite
+    adjustment via hazard(); use_adjusted=False runs the base model
+    via hazard_base().
 
     Returns (times list, L list, per-drug contribution dict, dose marker
     list of (time, drug display name)).
@@ -146,7 +178,7 @@ def compute_load(regimen):
     markers = []
     for entry in regimen:
         drug = DRUGS[entry["drug_key"]]
-        h = hazard(drug)
+        h = hazard(drug) if use_adjusted else hazard_base(drug)
         frac, _warn = dose_fraction(drug, entry["strength_mg"])
         ts = dose_times(entry["freq"], entry["offset"])
         markers.extend((tk, drug["display"]) for tk in ts if tk <= T_END)
@@ -470,6 +502,8 @@ def main():
 
     times, L, contrib, markers = compute_load(regimen)
     lmax, t_peak, auc, time_above = metrics(times, L)
+    _tb, L_base, _cb, _mb = compute_load(regimen, use_adjusted=False)
+    base_lmax, _btp, _bauc, _bta = metrics(times, L_base)
     windows = danger_windows(times, L)
     level, colour, headline = _verdict(lmax)
 
@@ -575,18 +609,28 @@ def main():
 
     # ---- Notes, tucked aside -----------------------------------------
     notes = list(warnings)
+    any_adjusted = False
     for e in regimen:
         d = DRUGS[e["drug_key"]]
         tm = d.get("toxic_metabolite")
         if tm:
+            factor = metabolite_factor(d)
+            if factor > 1.0:
+                any_adjusted = True
             notes.append(
                 f"Toxic metabolite: {d['display'].split(',')[0]} forms "
                 f"{tm['name']}"
                 + (f" via {tm['enzyme']}" if tm["enzyme"] else "")
                 + (", more toxic than the parent drug."
                    if tm["more_toxic"] == "YES" else ".")
-                + " Shown as information; metabolite points are not "
-                  "added to the score yet.")
+                + f" Model v2.1 raises this medicine's stress weight "
+                  f"x{factor:.2f} because of it.")
+    if any_adjusted:
+        notes.append(
+            "Metabolite adjustment is ON: a medicine that turns into "
+            "a more toxic metabolite inside the body gets a higher "
+            "stress weight (x1.25), and one with a toxic metabolite "
+            "gets x1.10. This is the project's Model v2.1 rule.")
     if notes:
         with st.expander("Notes"):
             for n in notes:
@@ -594,11 +638,12 @@ def main():
 
     # ---- The science, one tap away ------------------------------------
     with st.expander("See the science (graph, numbers, per-drug detail)"):
-        m1, m2, m3, m4 = st.columns(4)
-        m1.metric("Peak load Lmax", f"{lmax:.3f}")
-        m2.metric("Time of peak (h)", f"{t_peak:.2f}")
-        m3.metric("Toxic AUC (0-24 h)", f"{auc:.3f}")
-        m4.metric(f"Hours above threshold {THRESHOLD}",
+        m1, m2, m3, m4, m5 = st.columns(5)
+        m1.metric("Peak load (metabolite-adjusted)", f"{lmax:.3f}")
+        m2.metric("Peak load (base model)", f"{base_lmax:.3f}")
+        m3.metric("Time of peak (h)", f"{t_peak:.2f}")
+        m4.metric("Toxic AUC (0-24 h)", f"{auc:.3f}")
+        m5.metric(f"Hours above threshold {THRESHOLD}",
                   f"{time_above:.2f}")
         st.plotly_chart(_chart(times, L, contrib, markers, windows),
                         use_container_width=True)
@@ -612,6 +657,15 @@ def main():
         rows = []
         for e in regimen:
             d = DRUGS[e["drug_key"]]
+            tm = d.get("toxic_metabolite")
+            factor = metabolite_factor(d)
+            if factor == 1.25:
+                adj_note = (f"x1.25 ({tm['name']} more toxic than "
+                            f"parent)")
+            elif factor == 1.10:
+                adj_note = "x1.10"
+            else:
+                adj_note = "none"
             rows.append({
                 "Drug": d["display"],
                 "Strength (mg)": e["strength_mg"],
@@ -623,7 +677,9 @@ def main():
                     d["half_life"] if d["half_life"] is not None else "n/a",
                 "SeverityClass": d["severity"],
                 "DILIrank concern": d["concern"],
-                "Hazard H": round(hazard(d), 4),
+                "Hazard H (base)": round(hazard_base(d), 4),
+                "Hazard H (adjusted)": round(hazard(d), 4),
+                "Metabolite adjustment": adj_note,
                 "Formulation": d.get("formulation", ""),
                 "Main enzymes": d.get("enzymes", ""),
                 "Toxic metabolite": (d["toxic_metabolite"]["name"]
@@ -633,8 +689,14 @@ def main():
         st.dataframe(pd.DataFrame(rows), use_container_width=True)
 
     st.caption(
-        "Model: Layer 2 v2 of the project 'AI Framework for Multi-Drug "
-        "Combination Hepatotoxicity Risk Prediction'. Hazards from "
+        "Model: Layer 2 v2.1 (metabolite-adjusted) of the project 'AI "
+        "Framework for Multi-Drug Combination Hepatotoxicity Risk "
+        "Prediction'. Model v2.1 uplift rule: a drug whose toxic "
+        "metabolite is more toxic than the parent has its hazard "
+        "multiplied by 1.25, and a drug with any other toxic "
+        "metabolite by 1.10; the adjusted hazard is capped at 1.0, so "
+        "the uplift does not change drugs already at maximum hazard. "
+        "Hazards from "
         "DILIrank 2.0 (FDA LTKB); pharmacokinetic values from the "
         "project Fixed Database: PK table v1 (file 10, label-sourced "
         "values with sources, midpoints derived where labels give "
