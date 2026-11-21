@@ -4,8 +4,6 @@ A free, public research tool that estimates the combined liver stress of medicin
 
 **Project by Shivam Kumar**
 
-Shivam Kumar designed this framework, directed the research, and takes responsibility for the project: its design decisions, its data verification, and everything published here.
-
 **Live demo:** https://dili-combination-risk-psfzemxkcryjus4o39cmuh.streamlit.app/
 
 ## What this is
