@@ -10,6 +10,8 @@ Shivam Kumar designed this framework, directed the research, and takes responsib
 
 ## What this is
 
+The tool itself is called **HepMAT (Multi-drug Hepatotoxicity Assessment Tool)**.
+
 Most drug safety information describes one medicine at a time. Real patients, especially older patients and people treated for tuberculosis, HIV, or cancer, often take several medicines together. This project asks a simple question: can public data, molecular structures, and the timing of doses be combined to estimate the liver stress of a whole combination, beyond the score of any single drug in it?
 
 The demo is built verdict first, for people rather than for specialists:
