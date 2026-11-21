@@ -1,0 +1,1225 @@
+CompoundName,PubChem_CID,vDILI_Concern,SeverityClass,Alert_Count,Alert_Points_Total,Alerts,Alert_Quinone,Alert_Epoxide,Alert_Aniline,Alert_Hydrazine,Alert_Nitroaromatic,Alert_Thiophene,Alert_Furan,Alert_Thiourea,Alert_Carboxylic acid (acyl glucuronide precursor),Alert_Michael acceptor,Alert_Haloacetamide,Alert_Aldehyde,Alert_Phenol (quinone-imine precursor)
+Mercaptopurine,667490,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Acetaminophen,1983,vMost,5,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Azathioprine,2265,vMost,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chlorpheniramine maleate,5281068,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Clofibrate,2796,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cyclophosphamide,2907,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dopamine hydrochloride,65340,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Estradiol valerate,13791,vLess,2,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Fluoxetine hydrochloride,62857,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gemfibrozil,3463,vMost,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Indomethacin,3715,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ketoprofen,3825,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Mannitol,6251,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methotrexate sodium,11329481,vMost,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phenobarbital sodium,23674889,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phenytoin,1775,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rifampin,135398735,vMost,8,3,6,Furan; Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,1,0,0,1
+Abacavir sulfate,441384,vMOST-DILI-concern,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Acyclovir,135398513,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Allopurinol,135401907,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amineptine,34870,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Amiodarone hydrochloride,441325,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Amitriptyline hydrochloride,11065,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amphotericin B,5280965,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ampicillin sodium,23663979,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Donepezil hydrochloride,5741,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aspirin,2244,vLess,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Aminohippurate sodium,443971,vNo,0,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Bicalutamide,2375,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bupropion hydrochloride,62884,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Captopril,44093,vLess,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Carbamazepine,2554,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carboplatin,426756,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ceftazidime,5481173,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Chenodiol,10133,Ambiguous,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Chlorcyclizine hydrochloride,62413,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chlorzoxazone,2733,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chlorpromazine hydrochloride,6240,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cisplatin,5702198,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dimercaprol,3080,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Colchicine,6167,Ambiguous,6,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Corticotropin,16132265,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Dactinomycin,457193,vMost,8,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Dantrolene sodium,6604100,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Demeclocycline hydrochloride,54686764,Ambiguous,3,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Dexamethasone,5743,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Propoxyphene hydrochloride,15424,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Diclofenac sodium,5018304,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Diflunisal,3059,vMost,8,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Diphenhydramine hydrochloride,8980,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Epirubicin hydrochloride,65348,Ambiguous,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Erythromycin estolate,441371,vMost,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Etoposide,36462,vLess,3,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Famotidine,5702160,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Felbamate,3331,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fenofibrate,3339,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fenoprofen calcium,64747,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Flutamide,3397,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hydroxyurea,3657,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imatinib mesylate,123596,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imipramine hydrochloride,8228,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Iproniazid,3748,vMost,8,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Hydroxyprogesterone caproate,169870,Ambiguous,2,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Ketoconazole,47576,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Labetalol hydrochloride,71412,vMost,8,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Leflunomide,3899,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mefenamic acid,4044,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Meloxicam,54677470,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Metformin hydrochloride,14219,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methyldopa,38853,vMost,8,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Nefazodone hydrochloride,54911,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nitrofurantoin,6604200,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Olsalazine sodium,135413505,vLess,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Paroxetine hydrochloride,62878,vLess,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pentamidine isethionate,8813,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pentobarbital sodium,23676152,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Perhexiline,4746,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Physostigmine salicylate,657348,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Pioglitazone hydrochloride,60560,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Propylthiouracil,657298,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pseudoephedrine hydrochloride,9581,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ranitidine hydrochloride,3033332,vLess,5,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Rifabutin,135415564,vLess,5,3,6,Furan; Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,1,0,0,1
+Rosiglitazone maleate,5281055,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Indocyanine green,5282412,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simvastatin,54454,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Spironolactone,5833,vLess,2,2,4,Furan; Michael acceptor,0,0,0,0,0,0,1,0,0,1,0,0,0
+Stavudine,18283,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Streptomycin sulfate,19648,vNo,0,2,4,Furan; Aldehyde,0,0,0,0,0,0,1,0,0,0,0,1,0
+Sulfadiazine,5215,vLess,3,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Sulfasalazine,5339,vMost,5,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Sulindac,1548887,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Tamoxifen citrate,2733525,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Temozolomide,5394,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Theophylline sodium glycinate,23663537,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tizanidine hydrochloride,114869,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tolcapone,4659569,vMost,8,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Toremifene citrate,3005572,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Valproic acid,3121,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Vancomycin hydrochloride,6420023,vLess,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Vitamin A palmitate,5280531,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Zidovudine,35370,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Zolpidem tartrate,441338,Ambiguous,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Zonisamide,5734,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pyrazinamide,1046,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finasteride,57363,vLess,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Troglitazone,5591,vMost,8,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Fluvastatin sodium,23679527,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Glimepiride,3476,vLess,7,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Venlafaxine hydrochloride,62923,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amlodipine besylate,60496,vLess,5,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Vinblastine sulfate,5388983,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ciprofloxacin hydrochloride,62998,vMost,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Fluconazole,3365,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Prednisone,5865,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Lorazepam,3958,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Itraconazole,55283,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Raloxifene hydrochloride,54900,vLess,0,2,4,Thiophene; Phenol (quinone-imine precursor),0,0,0,0,0,1,0,0,0,0,0,0,1
+Mifepristone,55245,vLess,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Clomipramine hydrochloride,68539,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pravastatin sodium,16759173,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clarithromycin,84029,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hydrocortisone acetate,5744,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Progesterone,5994,vLess,2,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Ergocalciferol,5280793,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ibuprofen,3672,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Isoproterenol hydrochloride,5807,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Ketorolac tromethamine,84003,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Promethazine hydrochloride,6014,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Omeprazole,4594,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carvedilol,2585,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cytarabine,6253,vMost,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Norethindrone,6230,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Tromethamine,6503,Ambiguous,6,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pergolide mesylate,47812,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nisoldipine,4499,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Citalopram hydrobromide,77995,vLess,7,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Megestrol acetate,11683,Ambiguous,1,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Methyltestosterone,6010,vLess,2,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Testosterone enanthate,9416,vMost,8,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Praziquantel,4891,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ticlopidine hydrochloride,65335,vMost,4,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Diazepam,3016,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clomiphene citrate,60974,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Isotretinoin,5282379,vMost,5,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Oxymetholone,5281034,vMost,7,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Etodolac,3308,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Glipizide,3478,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pemoline,4723,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clotrimazole,2812,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Celecoxib,2662,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amoxapine,2170,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Iothalamate meglumine,656642,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Atorvastatin calcium,60822,vMost,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Olanzapine,135398745,vLess,3,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Nevirapine,4463,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Primidone,4909,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vinorelbine tartrate,11607738,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Anastrozole,2187,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rabeprazole sodium,14720269,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Azithromycin,447043,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tolazamide,5503,vLess,2,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Quetiapine fumarate,5281025,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Famciclovir,3324,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Atenolol,2249,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Benzbromarone,2333,vMost,8,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Bromocriptine mesylate,31100,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Busulfan,2478,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chlorambucil,2708,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Clozapine,135398737,vMost,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dacarbazine,135398738,vMost,6,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dapsone,2955,vLess,3,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Digoxin,2724385,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Dipyridamole,3108,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Disulfiram,3117,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Enalapril maleate,5388961,vLess,7,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Flurbiprofen sodium,23684814,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Furosemide,3440,Ambiguous,2,2,4,Furan; Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,1,0,1,0,0,0,0
+Gabapentin,3446,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Glyburide,3488,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Isoniazid,3767,vMost,8,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Lansoprazole,3883,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mebendazole,4030,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Metoprolol tartrate,441308,vLess,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Mycophenolic sodium,23665584,Ambiguous,3,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Naltrexone hydrochloride,5485201,Ambiguous,3,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Niacin,938,vMost,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Nifedipine,4485,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Nimesulide,4495,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nizatidine,4513,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methenamine hippurate,21945,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Dextrose,5793,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sodium lactate,23666456,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Verapamil hydrochloride,62969,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doxorubicin hydrochloride,443939,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Tretinoin,444795,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Isosorbide mononitrate,27661,Ambiguous,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Clorazepate dipotassium,167305,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Protirelin,638678,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sincalide,9833444,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Cupric chloride,24014,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trientine hydrochloride,71433,vNo,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chlorpropamide,2727,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cyclosporine,5284373,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Enalaprilat,5462501,Ambiguous,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Decitabine,451668,Ambiguous,4,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Deferoxamine mesylate,62881,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doxycycline,54671203,vLess,3,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Exemestane,60198,vMost,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Felodipine,3333,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Fludrocortisone acetate,225609,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Fluphenazine hydrochloride,67356,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fulvestrant,104741,Ambiguous,7,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Gefitinib,123631,vMost,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Haloperidol lactate,16051968,vLess,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Mesalamine,4075,vLess,7,3,6,Aniline; Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,1,0,0,0,0,0,1,0,0,0,1
+Minocycline hydrochloride,54685925,vMost,8,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Ioversol,3741,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Histrelin acetate,56927879,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Oxaprozin,4614,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Paclitaxel,36314,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phentolamine mesylate,91430,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Prazosin hydrochloride,68546,Ambiguous,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Prochlorperazine maleate,5281032,vLess,2,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Corticorelin ovine triflutate,16132344,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Sodium thiosulfate,24477,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sirolimus,5284616,vLess,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tacrolimus,445643,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Thalidomide,5426,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Thioridazine hydrochloride,66062,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Thioguanine,2723601,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tolbutamide,5505,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Topiramate,5284627,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trifluoperazine hydrochloride,66064,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Triptorelin pamoate,25074469,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Alatrofloxacin mesylate,5282517,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Vorinostat,5311,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doxercalciferol,5281107,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nesiritide,71308561,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ganirelix acetate,23724914,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Methylprednisolone,6741,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Sodium oxybate,23663870,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+L-glutamine,5961,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Cetrorelix acetate,25078429,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Tegaserod maleate,135413539,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Polidocanol,656641,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Penicillamine,5852,vLess,2,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Pramlintide acetate,118984456,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Lanthanum carbonate,168924,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fomepizole,3406,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Acetazolamide,1986,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Albendazole,2082,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alprazolam,2118,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Altretamine,2123,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amantadine hydrochloride,64150,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aminosalicylic acid,4649,vMOST-DILI-concern,5,3,6,Aniline; Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,1,0,0,0,0,0,1,0,0,0,1
+Amoxicillin,33613,vLess,5,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Atropine,174174,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Balsalazide disodium,135413496,Ambiguous,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Benoxaprofen,39941,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Emtricitabine,60877,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trospium chloride,5284631,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bromfenac sodium,11954316,vMost,8,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Gadofosveset trisodium,73049652,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cholic acid,221493,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Clonazepam,2802,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Exenatide synthetic,45588096,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Entecavir,135398508,Ambiguous,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Danazol,28417,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Daunorubicin hydrochloride,62770,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Deferiprone,2972,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dimenhydrinate,10660,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doxapram hydrochloride,64648,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Febuxostat,134018,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Granisetron hydrochloride,6918003,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griseofulvin,441140,vMost,8,2,4,Furan; Michael acceptor,0,0,0,0,0,0,1,0,0,1,0,0,0
+Hydralazine hydrochloride,9351,vLess,3,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Ibufenac,15250,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ifosfamide,3690,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Deferasirox,214348,vMost,7,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Rufinamide,129228,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sunitinib malate,6456015,vMost,8,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Lamivudine,60825,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methylnaltrexone bromide,5361917,vNo,0,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Lisdexamfetamine dimesylate,11597697,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Letrozole,3902,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Desvenlafaxine succinate,6918664,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Lomefloxacin hydrochloride,68624,Ambiguous,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Lomustine,3950,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lovastatin,53232,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Telbivudine,159269,Ambiguous,2,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Methimazole,1349907,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methocarbamol,4107,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Metronidazole,4173,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Minoxidil,4201,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mitomycin,5746,vLess,0,2,5,Quinone; Michael acceptor,1,0,0,0,0,0,0,0,0,1,0,0,0
+Modafinil,4236,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fesoterodine fumarate,9849808,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Naloxone hydrochloride,5464092,vNo,0,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Naproxen,156391,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Nateglinide,5311309,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Neomycin sulfate,197162,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Levocetirizine dihydrochloride,9955977,vLess,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Nystatin,6433272,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Oxytetracycline,54675779,Ambiguous,2,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Pantoprazole sodium,15008962,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nilotinib hydrochloride,16006490,vMost,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pralidoxime chloride,135445761,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Prednisolone,5755,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Primaquine phosphate,6135,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Procarbazine hydrochloride,9703,vLess,3,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Lanreotide acetate,6918010,Ambiguous,2,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Ambrisentan,6918493,Ambiguous,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Roflumilast,449193,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doripenem,73303,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Secobarbital sodium,14148199,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sertraline hydrochloride,63009,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sotalol hydrochloride,66245,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Streptozocin,29327,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sulfathiazole,5340,vMost,8,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Terbinafine hydrochloride,5282481,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Thiabendazole,5430,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ticrynafen,38409,vMost,8,2,4,Thiophene; Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,1,0,0,1,0,0,0,0
+Tinidazole,5479,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Torsemide,41781,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Maraviroc,3002977,vMost,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Raltegravir potassium,23668479,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clevidipine,153994,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Trovafloxacin mesylate,62960,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Regadenoson,219024,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Warfarin sodium,16204922,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Zaleplon,5719,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Zileuton,60490,vMost,5,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Ferumoxytol,6432052,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Etravirine,193962,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Iloperidone,71360,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Degarelix acetate,16186010,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Silodosin,5312125,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fospropofol disodium,3038497,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bendamustine hydrochloride,77082,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Lacosamide,219078,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tolvaptan,216237,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Eltrombopag olamine,135449331,vMost,4,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Tapentadol hydrochloride,9838021,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Prasugrel hydrochloride,10158453,vLess,0,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Saxagliptin hydrochloride,49800073,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pitavastatin calcium,5282451,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Romidepsin,5352062,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Fenofibric acid,64929,vLess,2,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Dronedarone hydrochloride,219025,vMost,7,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Pazopanib hydrochloride,11525740,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pralatrexate,148121,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Carglumic acid,121396,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Estropipate,5284555,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dexchlorpheniramine maleate,5281070,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Ecallantide,44152182,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Divalproex sodium,23663956,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Lumiracoxib,151166,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Tasosartan,60919,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxyphenisatin,31315,vMost,8,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Tilbroquinol,65592,vMost,8,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Alclofenac,30951,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Aplaviroc,3001322,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Clomacran,21382,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Isaxonine,71169,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pipamazine,6761,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pralnacasan,153270,vMost,8,2,5,Hydrazine; Furan,0,0,0,1,0,0,1,0,0,0,0,0,0
+Sulfacarbamide,11033,vMost,8,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Triacetyldiphenolisatin,29321,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fiduxosin,172307,vMost,8,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Pafuramidine,5480200,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Phenoxypropazine,71467,vMost,8,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Histamine phosphate,65513,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Butabarbital sodium,23690439,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Guanidine hydrochloride,5742,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aminophylline,9433,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Meperidine hydrochloride,5750,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methamphetamine hydrochloride,66124,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methadone hydrochloride,14184,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doxylamine succinate,11224,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Bethanechol chloride,11548,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cortisone acetate,5745,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Dicyclomine hydrochloride,441344,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Norepinephrine bitartrate,3047796,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Dyphylline,3182,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Epinephrine,5816,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Succinylcholine chloride,22475,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Levorphanol tartrate,5464027,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Propantheline bromide,9279,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carbinoxamine maleate,5282409,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Edetate calcium disodium,6093170,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Diatrizoate sodium,23672589,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phytonadione,5284607,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Mecamylamine hydrochloride,13221,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Liothyronine sodium,23666110,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Methsuximide,6476,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mepenzolate bromide,6461,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Meclizine hydrochloride,173612,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ethotoin,3292,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Triprolidine hydrochloride,5702129,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Benzonatate,7699,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dichlorphenamide,3038,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methohexital sodium,23690443,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Diethylpropion hydrochloride,91442,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxymorphone hydrochloride,5359390,vNo,0,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Dexbrompheniramine maleate,6433334,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Hydroflumethiazide,3647,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Biperiden hydrochloride,92151,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Isosorbide dinitrate,6883,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Mepivacaine hydrochloride,66070,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bendroflumethiazide,2315,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phendimetrazine tartrate,120608,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Oxytocin,439302,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Guanethidine monosulfate,86471,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ethosuximide,3291,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Benzphetamine hydrochloride,11558159,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methyclothiazide,4121,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Glycopyrrolate,11693,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Metyrapone,4174,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Metaxalone,15459,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxandrolone,5878,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxazepam,4616,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Protriptyline hydrochloride,6603149,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cosyntropin,16129617,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Flavoxate hydrochloride,441345,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ketamine hydrochloride,15851,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Diazoxide,3019,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pancuronium bromide,27350,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pentagastrin,9853654,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Dextroamphetamine sulfate,5825,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Terbutaline sulfate,441334,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Calcitonin salmon,16220016,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Pentetate calcium trisodium yb-169,49800014,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sodium nitroprusside,11953895,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Colestipol hydrochloride,3084661,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lactulose,11333,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Fluorescein sodium,10608,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Metyrosine,441350,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Desmopressin acetate,9833407,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Carboprost tromethamine,5281074,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Calcitriol,5280453,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Morphine sulfate,16051935,vNo,0,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Dronabinol,16078,Ambiguous,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Nabilone,5284592,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Acetohydroxamic acid,1990,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vecuronium bromide,39764,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Atracurium,47319,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hydromorphone hydrochloride,5462347,Ambiguous,3,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Sufentanil citrate,65494,vNo,0,2,4,Thiophene; Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,1,0,0,1,0,0,0,0
+Misoprostol,5282381,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tranexamic acid,5526,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Alfentanil hydrochloride,64761,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ethanolamine oleate,5282489,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Rubidium chloride rb-82,71357,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Urofollitropin,73759969,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Milrinone lactate,172293,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Teriparatide acetate,118984441,vLess,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+L-Cysteine,5862,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Gadopentetate dimeglumine,55466,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Rimantadine hydrochloride,15165,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Goserelin acetate,16052011,Ambiguous,3,3,7,Hydrazine; Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,1,0,0,0,0,1,0,0,0,1
+Fenoldopam mesylate,49659,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Metoprolol succinate,62937,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Calcium acetate,6116,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mivacurium chloride,5281080,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gadodiamide,153921,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gadoteridol,60714,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Perindopril erbumine,441313,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Rocuronium bromide,441351,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aprotinin,16130295,Ambiguous,7,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Anagrelide hydrochloride,135413494,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vigabatrin,5665,Ambiguous,2,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Epoprostenol sodium,6364626,Ambiguous,7,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Ibutilide fumarate,5281065,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Cisatracurium besylate,62886,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxycodone hydrochloride,5462350,vLess,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Alendronate sodium,23681107,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tamsulosin hydrochloride,5362376,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dolasetron mesylate,3033817,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Remifentanil hydrochloride,60814,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sibutramine hydrochloride,64764,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tiagabine hydrochloride,91274,Ambiguous,3,2,4,Thiophene; Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,1,0,0,1,0,0,0,0
+Ropinirole hydrochloride,68727,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pramipexole dihydrochloride,119569,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Miglitol,441314,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delavirdine mesylate,441386,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tiludronate disodium,60936,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Eptifibatide,448812,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Eprosartan mesylate,5282474,Ambiguous,3,3,6,Thiophene; Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,1,0,0,1,1,0,0,0
+Repaglinide,65981,vLess,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Irbesartan,3749,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Naratriptan hydrochloride,60875,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Zolmitriptan,60857,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tolterodine tartrate,443878,vLess,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Nelfinavir mesylate,64142,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Lepirudin,118856773,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Paricalcitol,5281104,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rivastigmine tartrate,6918078,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ziprasidone hydrochloride,219099,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Risedronate sodium,4194514,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Candesartan cilexetil,2540,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clopidogrel bisulfate,115366,vLess,7,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Cilostazol,2754,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rizatriptan benzoate,77997,vLess,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Bivalirudin,16129704,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Azacitidine,9444,Ambiguous,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Fluorouracil,3385,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Argatroban,92722,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Sildenafil citrate,135413523,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Acarbose,9811704,vMost,8,1,2,Aldehyde,0,0,0,0,0,0,0,0,0,0,0,1,0
+Acebutolol hydrochloride,441307,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tirofiban hydrochloride,64781,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Dofetilide,71329,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Acetylcysteine,12035,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Acitretin,5284513,vMost,5,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Gadoversetamide,444013,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Adenosine,60961,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cevimeline hydrochloride,73416227,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Albuterol,2083,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Almotriptan malate,123607,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Frovatriptan succinate,152943,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Amprenavir,65016,Ambiguous,3,2,4,Aniline; Furan,0,0,1,0,0,0,1,0,0,0,0,0,0
+Oxcarbazepine,34312,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rifapentine,135403821,Ambiguous,4,3,6,Furan; Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,1,0,0,1
+Levetiracetam,5284583,vLess,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alpidem,54897,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dexmedetomidine hydrochloride,6918081,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bexarotene,82146,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Perflutren,6432,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amifostine,2141,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amikacin sulfate,38351,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alosetron hydrochloride,60758,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aminocaproic acid,564,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Levothyroxine sodium,23666112,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Inamrinone lactate,3035194,Ambiguous,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Linezolid,441401,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gemifloxacin mesylate,9588170,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Desloratadine,124087,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Galantamine hydrobromide,121587,Ambiguous,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cefditoren pivoxil,6437877,vLess,2,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Zoledronic acid,68740,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Caspofungin acetate,6850808,Ambiguous,7,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Nitisinone,115355,Ambiguous,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arsenic trioxide,14888,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Atovaquone,74989,Ambiguous,8,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Voriconazole,71616,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Guaifenesin,3516,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Olmesartan medoxomil,130881,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alfuzosin hydrochloride,71764,vLess,5,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Valganciclovir hydrochloride,135413534,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aztreonam,5742832,Ambiguous,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Dutasteride,6918296,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Baclofen,2284,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Benazepril hydrochloride,5362123,vLess,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Bendazac,2313,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Benzarone,255968,vMost,8,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Benziodarone,6237,vMost,8,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Ertapenem sodium,23674512,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Benztropine mesylate,238053,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fondaparinux sodium,636380,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Miglustat,51634,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gadobenate dimeglumine,6918204,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Rifaximin,6436173,Ambiguous,7,3,6,Furan; Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,1,0,0,1
+Tadalafil,110635,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Palonosetron hydrochloride,6918303,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Betaxolol hydrochloride,107952,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vardenafil hydrochloride,135438569,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bisoprolol fumarate,5281064,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Bleomycin sulfate,71587153,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Atomoxetine hydrochloride,54840,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bosentan,104865,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Acamprosate calcium,155434,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aripiprazole,60795,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Budesonide,5281004,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Bumetanide,2471,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Buspirone hydrochloride,36431,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Eplerenone,443872,vLess,4,3,7,Epoxide; Furan; Michael acceptor,0,1,0,0,0,0,1,0,0,1,0,0,0
+Butorphanol tartrate,5464090,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Cabergoline,54746,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ezetimibe,150311,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Pregabalin,5486971,vLess,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Adefovir dipivoxil,60871,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ibandronate sodium,23663991,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pemetrexed disodium,135413520,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carbenicillin disodium,20933,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carbidopa,34359,Ambiguous,3,3,7,Hydrazine; Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,1,0,0,0,0,1,0,0,0,1
+Eszopiclone,969472,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cefaclor,51039,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Cefadroxil hemihydrate,67173987,vLess,7,3,6,Carboxylic acid (acyl glucuronide precursor); Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,1,0,0,1
+Enfuvirtide,16130199,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Cefazolin sodium,23675322,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Cefepime hydrochloride,9571075,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Cefixime,5362065,vLess,4,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Cefoperazone sodium,23663974,vLess,3,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Cefotaxime sodium,10695961,vLess,5,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Cefotetan disodium,53024,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Cefoxitin sodium,23667300,Ambiguous,3,2,4,Thiophene; Michael acceptor,0,0,0,0,0,1,0,0,0,1,0,0,0
+Cefpodoxime proxetil,6526396,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Oxaliplatin,9887053,vMost,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Cefprozil,62977,vLess,4,3,6,Carboxylic acid (acyl glucuronide precursor); Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,1,0,0,1
+Ceftibuten dihydrate,5282241,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Nitazoxanide,41684,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ceftriaxone sodium,23715082,vLess,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Cefuroxime sodium,23670318,vLess,5,2,4,Furan; Michael acceptor,0,0,0,0,0,0,1,0,0,1,0,0,0
+Micafungin sodium,23666118,vMost,7,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Darifenacin hydrobromide,444030,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cephalexin,27447,vLess,4,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Cetirizine hydrochloride,55182,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Solifenacin succinate,216457,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ranolazine,56959,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Etonogestrel,6917715,Ambiguous,5,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Fosamprenavir calcium,131535,Ambiguous,3,2,4,Aniline; Furan,0,0,1,0,0,0,1,0,0,0,0,0,0
+Aprepitant,135413536,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chloramphenicol,5959,vNo,0,1,3,Haloacetamide,0,0,0,0,0,0,0,0,0,0,1,0,0
+Chlordiazepoxide hydrochloride,9916,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Atazanavir sulfate,158550,vLess,3,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Daptomycin,21585658,vLess,5,2,4,Aniline; Carboxylic acid (acyl glucuronide precursor),0,0,1,0,0,0,0,0,1,0,0,0,0
+Chlormezanone,2717,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bortezomib,387447,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Anidulafungin,166548,vMost,7,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Rasagiline mesylate,3052775,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clofarabine,119182,Ambiguous,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Chloroquine phosphate,64927,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chlorothiazide,2720,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cinacalcet hydrochloride,156418,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Conivaptan hydrochloride,216322,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nebivolol hydrochloride,24866733,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chlorthalidone,2732,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Erlotinib hydrochloride,176871,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alvimopan,5488548,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Cidofovir,60613,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ramelteon,208902,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cimetidine,2756,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cinchophen,8593,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Tipranavir,54682461,vMost,8,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Tigecycline,54686904,vMost,8,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Cladribine,20279,vLess,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Clindamycin hydrochloride,16051951,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clometacin,33176,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Armodafinil,9690109,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clonidine hydrochloride,20179,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nelarabine,3011155,vLess,4,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cloxacillin sodium,23675320,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lenalidomide,216326,vLess,3,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Tetrabenazine,6018,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lubiprostone,157920,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Sorafenib tosylate,406563,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Varenicline tartrate,6918678,vLess,2,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Darunavir,213039,vMost,8,2,4,Aniline; Furan,0,0,1,0,0,0,1,0,0,0,0,0,0
+Aliskiren hemifumarate,6918427,vLess,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Dasatinib,3062316,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cyclobenzaprine hydrochloride,22576,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cyclofenil,2898,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sitagliptin phosphate,11591741,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Paliperidone,115237,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycloserine,6234,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Posaconazole,468595,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cyproheptadine hydrochloride,13770,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cysteamine bitartrate,11958147,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Fosaprepitant dimeglumine,135564864,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hydroxocobalamin,44475014,Ambiguous,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Temsirolimus,6918289,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sapropterin dihydrochloride,135409471,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Milnacipran hydrochloride,163701,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Desipramine hydrochloride,65327,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dexlansoprazole,9578005,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Everolimus,6442177,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Liraglutide,16134956,vLess,4,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Codeine sulfate,21155870,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Dexrazoxane hydrochloride,6918223,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Colistimethate sodium,44585614,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cephradine,38103,Ambiguous,4,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Ceftizoxime sodium,23663938,Ambiguous,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Didanosine,135398739,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Mycophenolate mofetil,5281078,vLess,3,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Cefdinir,6915944,vLess,7,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Diltiazem hydrochloride,62920,vMost,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sterile water,962,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Disopyramide phosphate,30928,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Interferon alfa-2b,71306834,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dobutamine hydrochloride,65324,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Docetaxel,148124,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doxazosin mesylate,62978,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Doxepin hydrochloride,6419921,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Epoetin alfa,92043599,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Droperidol,3168,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Droxicam,65679,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Efavirenz,64139,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Esmolol hydrochloride,104769,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Estazolam,3261,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Estramustine phosphate sodium,444000,vMost,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ethacrynic acid,3278,Ambiguous,5,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Ethambutol hydrochloride,14051,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ethionamide,2761171,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Etidronate disodium,23894,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Etomidate,667484,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Exifone,40399,vMost,8,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Fexofenadine hydrochloride,63002,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Fialuridine,50313,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Fipexide,3351,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Flecainide acetate,41022,vLess,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Flucytosine,3366,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fludarabine phosphate,30751,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Flumazenil,3373,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Flurazepam hydrochloride,14434,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fluvoxamine maleate,9560989,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Foscarnet sodium,44561,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fosfomycin tromethamine,10199068,vLess,6,1,3,Epoxide,0,1,0,0,0,0,0,0,0,0,0,0,0
+Fosinopril sodium,23681451,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fosphenytoin sodium,56338,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ganciclovir sodium,23700083,Ambiguous,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gemcitabine hydrochloride,60749,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Guanfacine hydrochloride,71401,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Heparin sodium,92044406,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Hydrochlorothiazide,3639,vLess,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hydroxyzine hydrochloride,91513,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Idarubicin hydrochloride,636362,Ambiguous,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Indapamide,3702,Ambiguous,5,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Indinavir sulfate,5462355,Ambiguous,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Iodipamide sodium,17478,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Irinotecan hydrochloride,74990,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methionine,6137,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Isocarboxazid,3759,Ambiguous,5,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Isradipine,3784,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Kanamycin,6032,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Riboflavin 5'-phosphate,643976,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lamotrigine,3878,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Levocarnitine,10917,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Levofloxacin,149096,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Levonorgestrel,13109,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Lincomycin hydrochloride,64710,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lisinopril,5362119,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Loracarbef,5284585,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Loratadine,3957,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Losartan potassium,11751549,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Loxapine succinate,71399,Ambiguous,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Maprotiline hydrochloride,71478,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mebanazine,6179,vMost,8,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Mechlorethamine hydrochloride,5935,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Meclofenamate sodium,4038,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Medroxyprogesterone acetate,6279,Ambiguous,2,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Mefloquine hydrochloride,65329,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vitamin E,69540411,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Melphalan,460612,vLess,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Mephenytoin,4060,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Meprobamate,4064,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Meropenem,441130,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Mesna,23662354,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mesoridazine besylate,36207,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methazolamide,4100,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methoxsalen,4114,vLess,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Clobazam,2789,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methylphenidate hydrochloride,9280,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methscopolamine bromide,5459110,vNo,0,1,3,Epoxide,0,1,0,0,0,0,0,0,0,0,0,0,0
+Metoclopramide hydrochloride,441347,vLess,5,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Mexiletine hydrochloride,21467,vMost,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Midazolam hydrochloride,43032,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Midodrine hydrochloride,18340,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mirtazapine,4205,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mitotane,4211,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mitoxantrone hydrochloride,51082,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Moexipril hydrochloride,54889,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Moricizine hydrochloride,34632,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Moxisylyte,4260,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Folic acid,135398658,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Nabumetone,4409,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nadolol,39147,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nafcillin sodium,23667630,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nalbuphine hydrochloride,5360733,vNo,0,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Nalidixic acid,4421,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Nalmefene hydrochloride,5388881,Ambiguous,3,2,4,Furan; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,0,0,0,1
+Esomeprazole sodium,23674541,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nialamide,4472,vMost,8,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Nicardipine hydrochloride,41114,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Nilutamide,4493,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nimodipine,4497,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Niperotidine,66753191,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Nitroglycerin,4510,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nomifensine,4528,vMost,8,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Norfloxacin,4539,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Nortriptyline hydrochloride,441358,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Octreotide acetate,155804637,vLess,2,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ondansetron hydrochloride,68647,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ofloxacin,4583,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Diphenoxylate,13505,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxacillin sodium,23694213,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ambenonium chloride,8288,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Papaverine hydrochloride,6084,vMost,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Penbutolol sulfate,38010,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Penicillin g benzathine,656811,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Penicillin v potassium,23676814,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pentazocine lactate,656697,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Pentostatin,439693,vMost,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Pentoxifylline,4740,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Perphenazine,4748,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phenelzine sulfate,61100,vLess,3,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Ephedrine sulfate,5359318,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pilocarpine,5910,Ambiguous,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Pimozide,16362,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pindolol,4828,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Piperacillin sodium,23666879,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Piroxicam,54676228,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Pirprofen,35935,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Salsalate,5161,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Probenecid,4911,Ambiguous,6,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Procainamide hydrochloride,66068,vLess,4,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Propafenone hydrochloride,36708,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Propranolol hydrochloride,62882,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Propofol,4943,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Pyrantel pamoate,5281033,vNo,0,3,6,Thiophene; Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,1,0,0,1,0,0,0,1
+Pyrimethamine,4993,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Quazepam,4999,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Quinapril hydrochloride,54891,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Quinidine gluconate,94328,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ramipril,5362129,vLess,7,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Reserpine,5770,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ribavirin,37542,vLess,7,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Riluzole,5070,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Risperidone,5073,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ritonavir,392622,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Saquinavir mesylate,60934,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Selegiline hydrochloride,26758,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Spectinomycin hydrochloride,30971,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Succimer,2724354,vLess,2,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Lofexidine hydrochloride,30667,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sumatriptan succinate,59772,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Icatibant acetate,6918172,Ambiguous,3,2,4,Thiophene; Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,1,0,0,1,0,0,0,0
+Temazepam,5391,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Teniposide,452548,vLess,3,3,6,Thiophene; Furan; Phenol (quinone-imine precursor),0,0,0,0,0,1,1,0,0,0,0,0,1
+Terazosin hydrochloride,63016,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Droxidopa,92974,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Amisulpride,2159,vLess,3,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Thiotepa,5453,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Thiothixene,941651,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Timolol maleate,5281056,Ambiguous,5,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+suloctidil,6604413,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tiopronin,5483,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Tolmetin sodium,23665411,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tolrestat,53359,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Topotecan hydrochloride,60699,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Tramadol hydrochloride,63013,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trandolapril,5484727,vLess,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Tranylcypromine sulfate,11473982,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trazodone hydrochloride,62935,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Triamterene,5546,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Triazolam,5556,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trihexyphenidyl hydrochloride,66007,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trimethadione,5576,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trimethobenzamide hydrochloride,68385,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trimethoprim,5578,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trimetrexate glucuronate,54949,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Aldehyde,0,0,0,0,0,0,0,0,1,0,0,1,0
+Trimipramine maleate,5282318,Ambiguous,2,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Fenclozic acid,28858,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ebrotidine,65869,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aceclofenac,71771,vLess,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Nitrefazole,71900,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ursodiol,31401,Ambiguous,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Valaciclovir,135398742,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Valsartan,60846,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Tetrabamate,57394584,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Viloxazine hydrochloride,71424,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vincristine sulfate,249332,vLess,8,1,2,Aldehyde,0,0,0,0,0,0,0,0,0,0,0,1,0
+Artesunate,6917864,Ambiguous,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Xenazoic acid,239062,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Zafirlukast,5717,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Falnidamol,6918508,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Zimelidine,5365247,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Caffeine citrate,6241,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Capreomycin sulfate,71457947,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Lidocaine,3676,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Memantine hydrochloride,181458,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pamidronate disodium,73351,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Quinine sulfate,16051948,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rosuvastatin calcium,5282455,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sulfamethizole,5328,vLess,0,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Telithromycin,3002190,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Entacapone,5281081,vLess,0,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Valdecoxib,119607,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dexpanthenol,131204,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scopolamine,3000322,vNo,0,1,3,Epoxide,0,1,0,0,0,0,0,0,0,0,0,0,0
+Pyridoxine hydrochloride,6019,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Thiamine hydrochloride,6202,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cyanocobalamin,166596686,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cromoglicate,2882,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Montelukast sodium,23663996,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Moxifloxacin hydrochloride,101526,vLess,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Vitamin C,54670067,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Sorbitol,5780,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Capecitabine,60953,vLess,2,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Leuprolide acetate,657180,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Eletriptan hydrobromide,656631,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hydroxychloroquine sulfate,12947,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fluoxymesterone,6446,Ambiguous,8,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Ximelagatran,9574101,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Duloxetine hydrochloride,60834,vMost,8,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Carisoprodol,2576,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dicloxacillin sodium,23667628,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Estrone,5870,Ambiguous,2,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Metolazone,4170,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pamabrom,11806,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dextromethorphan polistirex,5464025,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bacitracin,10909430,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Paromomycin sulfate,441375,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Telmisartan,65999,vLess,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Gallium nitrate,61635,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ammonium chloride,25517,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amiloride hydrochloride,68540,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Methysergide maleate,5281073,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Methylergonovine maleate,5281072,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Brompheniramine maleate,5281067,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Arginine hydrochloride,66250,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Pyridostigmine bromide,7550,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Phenoxybenzamine hydrochloride,5284441,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oxybutynin chloride,91505,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Orphenadrine hydrochloride,9568,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Metaproterenol sulfate,441333,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Loperamide hydrochloride,71420,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Isoxsuprine hydrochloride,11368,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Glafenine,3474,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Edrophonium chloride,8307,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Acetylcholine chloride,6060,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amphetamine sulfate,6055,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mepazine,6075,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nandrolone phenpropionate,229455,vMost,7,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Omacetaxine mepesuccinate,285033,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nifurtimox,6842999,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Auranofin,16667669,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Betaine,247,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bisacodyl,2391,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Leucovorin calcium,135403647,vNo,0,1,2,Aldehyde,0,0,0,0,0,0,0,0,0,0,0,1,0
+Ixabepilone,6445540,Ambiguous,7,1,3,Epoxide,0,1,0,0,0,0,0,0,0,0,0,0,0
+Lapatinib ditosylate,11557040,vMost,8,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Oseltamivir phosphate,78000,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Alaproclate,2081,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Orlistat,3034010,vMost,8,1,2,Aldehyde,0,0,0,0,0,0,0,0,0,0,0,1,0
+Apomorphine hydrochloride,107882,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Dihydroergotamine mesylate,71171,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Procyclidine hydrochloride,207841,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clemastine fumarate,5281069,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Tenofovir disoproxil fumarate,6398764,vLess,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Angiotensin ii acetate,172197,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Norethindrone acetate,5832,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Erythropoietin,92043599,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Argipressin,644077,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Gadobutrol,6102852,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sodium bicarbonate,516892,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Abiraterone acetate,9821849,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Plerixafor,65015,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fingolimod hydrochloride,107969,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sodium phenylbutyrate,5258,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dabigatran etexilate mesylate,135566083,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Clindamycin phosphate,443385,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bosutinib monohydrate,11990828,vMost,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rilpivirine hydrochloride,11711114,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tyramine,5610,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Fidaxomicin,10034073,Ambiguous,3,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Eribulin mesylate,17755248,Ambiguous,4,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Ceftaroline fosamil,9852981,vLess,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Mirabegron,9865528,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vandetanib,3081361,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rivaroxaban,9875401,vLess,5,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Vilazodone hydrochloride,6918313,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Tofacitinib citrate,10174505,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Carfilzomib,11556711,vMost,8,1,3,Epoxide,0,1,0,0,0,0,0,0,0,0,0,0,0
+Teriflunomide,54684141,vMost,8,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Lomitapide mesylate,11274333,vMost,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Axitinib,6450551,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bedaquiline fumarate,24812732,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Pasireotide diaspartate,70788982,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Gadoxetate disodium,91754427,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vismodegib,24776445,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lurasidone hydrochloride,11237860,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linaclotide,16158208,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Ticagrelor,9871419,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Apixaban,10182969,vLess,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Estrogens, conjugated",45357473,Ambiguous,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Haloperidol decanoate,52919,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cabozantinib s-malate,25102846,Ambiguous,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ivacaftor,16220172,vLess,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Regorafenib,11167602,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ponatinib hydrochloride,46908927,Ambiguous,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vemurafenib,42611257,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Crizotinib,11626560,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Levoleucovorin,135398559,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Aldehyde,0,0,0,0,0,0,0,0,1,0,0,1,0
+Avanafil,9869929,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ruxolitinib phosphate,25127112,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Levomefolate calcium,135564391,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ulipristal acetate,130904,vLess,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Enzalutamide,15951529,vNo,0,1,2,Thiourea,0,0,0,0,0,0,0,1,0,0,0,0,0
+Linagliptin,10096344,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Perampanel,9924495,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sitaxsentan,216235,vMost,8,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Macitentan,16004692,vMost,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cangrelor,9854012,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Ivabradine hydrochloride,3045381,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Deflazacort,189821,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Stiripentol,5311454,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lactitol,157355,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Benznidazole,31593,Ambiguous,2,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gadoterate meglumine,6918037,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Dimethyl fumarate,637568,vMost,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Ospemifene,3036505,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Eslicarbazepine acetate,179344,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pomalidomide,134780,vMost,8,1,2,Aniline,0,0,1,0,0,0,0,0,0,0,0,0,0
+Tasimelteon,10220503,Ambiguous,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Alogliptin benzoate,16088021,Ambiguous,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Afatinib dimaleate,15606394,Ambiguous,8,3,6,Furan; Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,1,0,1,1,0,0,0
+Dapagliflozin,9887712,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Riociguat,11304743,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ibrutinib,24821094,vMost,7,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Canagliflozin,24812758,vLess,0,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Cabazitaxel,9854073,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sofosbuvir,45375808,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Vortioxetine hydrobromide,56843850,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trametinib dimethyl sulfoxide,50992434,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dabrafenib mesylate,44516822,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dolutegravir sodium,46216142,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dexmethylphenidate hydrochloride,154100,vLess,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Escitalopram oxalate,146571,vLess,7,2,4,Furan; Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,1,0,1,0,0,0,0
+Miltefosine,3599,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Triclabendazole,50248,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Secnidazole,71815,Ambiguous,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trabectedin,108150,Ambiguous,7,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Prucalopride succinate,9870009,vNo,0,3,6,Aniline; Furan; Carboxylic acid (acyl glucuronide precursor),0,0,1,0,0,0,1,0,1,0,0,0,0
+Sugammadex sodium,6918584,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amifampridine,5918,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pirfenidone,40632,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Maribavir,471161,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Voclosporin,6918486,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Panobinostat lactate,23725423,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Tafamidis meglumine,24970412,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Cobicistat,25151504,Ambiguous,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Neratinib maleate,67307512,Ambiguous,4,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Palbociclib,5330286,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ceritinib,57379345,vMost,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Zanubrutinib,135565884,vMost,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Obeticholic acid,447715,vMost,8,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Eluxadoline,11250029,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ribociclib succinate,57334219,vMost,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Idelalisib,11625818,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Belinostat,6918638,Ambiguous,8,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Cobimetinib fumarate,71491931,Ambiguous,4,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Acalabrutinib,71226662,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lenvatinib mesylate,11237762,Ambiguous,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Abaloparatide,76943386,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Abemaciclib,46220502,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alectinib hydrochloride,53239799,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alpelisib,56649450,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Apalutamide,24872560,vNo,0,1,2,Thiourea,0,0,0,0,0,0,0,1,0,0,0,0,0
+Apremilast,11561674,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aripiprazole lauroxil,49831411,vLess,5,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asciminib hydrochloride,133082086,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Atogepant,72163100,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Avacopan,49841217,Ambiguous,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Avapritinib,118023034,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Avatrombopag maleate,9918581,vNo,0,3,6,Thiophene; Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,1,0,0,1,1,0,0,0
+Azilsartan kamedoxomil,23699544,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Baloxavir marboxil,124081896,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Baricitinib,44205240,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Belumosudil mesylate,146025939,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Belzutifan,117947097,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bempedoic acid,10472693,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Berotralstat hydrochloride,139030242,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Binimetinib,10288191,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bremelanotide acetate,91971505,Ambiguous,4,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Brexanolone,92786,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Brexpiprazole,11978813,vNo,0,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Brigatinib,68165256,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Brivaracetam,9837243,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cabotegravir sodium,46215800,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cannabidiol,644019,Ambiguous,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Capmatinib hydrochloride,122201352,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cariprazine hydrochloride,25096873,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cefiderocol sulfate tosylate,131839616,Ambiguous,2,3,6,Carboxylic acid (acyl glucuronide precursor); Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,1,0,0,1
+Cenobamate,11962412,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Copanlisib dihydrochloride,135565785,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dacomitinib,11511120,vLess,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Dalfampridine,1727,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Darolutamide,67171867,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delafloxacin meglumine,11578213,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Deoxycholic acid,222528,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Deutetrabenazine,73442840,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Difelikefalin acetate,91864509,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Diroximel fumarate,73330464,Ambiguous,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Doravirine,58460047,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Duvelisib,50905713,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Edaravone,4021,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Edoxaban tosylate,44610678,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Elagolix sodium,24785956,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Eliglustat tartrate,52918379,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Empagliflozin,11949646,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Enasidenib mesylate,90480031,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Encorafenib,50922675,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Entrectinib,25141092,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Eravacycline dihydrochloride,56951485,Ambiguous,3,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Erdafitinib,67462786,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ertugliflozin,44814423,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Etelcalcetide,71511839,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Fedratinib hydrochloride,67517580,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ferric maltol,169535,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fexinidazole,68792,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finerenone,60150535,vNo,0,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Flibanserin,6918248,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fosdenopterin hydrobromide,145722612,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fostamatinib disodium,24828759,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fostemsavir tromethamine,46892186,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gabapentin enacarbil,9883933,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Gilteritinib fumarate,76970819,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Glasdegib maleate,122640033,Ambiguous,4,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Ibrexafungerp citrate,137552087,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Infigratinib phosphate,56669626,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Isavuconazonium sulfate,72196309,Ambiguous,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Istradefylline,5311037,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ivosidenib,71657455,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ixazomib citrate,56844015,Ambiguous,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Larotrectinib sulfate,67330085,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lasmiditan succinate,46927777,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Lemborexant,56944144,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Letermovir,45138674,vLess,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Levamlodipine maleate,69165622,Ambiguous,5,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Lonafarnib,148195,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lorlatinib,71731823,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lumateperone tosylate,44241743,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lurbinectedin,57327016,Ambiguous,3,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Lusutrombopag,49843517,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Macimorelin acetate,71526737,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Aldehyde,0,0,0,0,0,0,0,0,1,0,0,1,0
+Maralixibat chloride,9831642,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Migalastat hydrochloride,11644097,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mobocertinib succinate,146026179,Ambiguous,3,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Monomethyl fumarate,5369209,Ambiguous,4,2,4,Carboxylic acid (acyl glucuronide precursor); Michael acceptor,0,0,0,0,0,0,0,0,1,1,0,0,0
+Moxidectin,9832912,Ambiguous,4,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Naldemedine tosylate,56837137,vNo,0,3,6,Furan; Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,1,0,0,1
+Naloxegol oxalate,56959086,vNo,0,3,6,Furan; Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,1,0,0,0,1
+Nintedanib esylate,135476717,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Niraparib tosylate,78357761,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Odevixibat,10153627,Ambiguous,4,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Olaparib,23725625,vLess,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Oliceridine,66553195,Ambiguous,3,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Opicapone,135565903,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Osilodrostat phosphate,71009737,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Osimertinib mesylate,78357807,vLess,4,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Ozanimod hydrochloride,91618104,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pafolacianine sodium,135564971,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pemigatinib,86705695,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Peramivir,154234,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Pexidartinib hydrochloride,73053710,vMost,8,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pimavanserin tartrate,11672491,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Pitolisant hydrochloride,11551689,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Plazomicin sulfate,71515458,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Plecanatide,70693500,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ponesimod,11363176,Ambiguous,3,1,2,Michael acceptor,0,0,0,0,0,0,0,0,0,1,0,0,0
+Pralsetinib,129073603,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pretomanid,456199,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Relugolix,10348973,Ambiguous,3,1,2,Thiophene,0,0,0,0,0,1,0,0,0,0,0,0,0
+Remimazolam besylate,23658607,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rifamycin sodium,23702994,vNo,0,3,6,Furan; Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,1,0,0,1,0,0,1
+Rimegepant sulfate,71586738,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ripretinib,71584930,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Risdiplam,118513932,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rolapitant hydrochloride,16203739,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rucaparib camsylate,121490161,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Midostaurin,9829523,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Safinamide mesylate,3038502,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sarecycline hydrochloride,71296095,vNo,0,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Selenious acid,1091,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Selexipag,9913767,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Selinexor,71481097,Ambiguous,4,2,5,Hydrazine; Michael acceptor,0,0,0,1,0,0,0,0,0,1,0,0,0
+Selpercatinib,134436906,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Selumetinib sulfate,16214875,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Semaglutide,56843331,vLess,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Setmelanotide acetate,155491122,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Siponimod,44599207,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Sodium zirconium cyclosilicate,155804812,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Solriamfetol hydrochloride,67583702,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sonidegib phosphate,45138699,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sotorasib,137278711,Ambiguous,3,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Suvorexant,24965990,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Talazoparib tosylate,135565654,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tazemetostat hydrobromide,71761627,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tecovirimat,16124688,vNo,0,1,3,Hydrazine,0,0,0,1,0,0,0,0,0,0,0,0,0
+Tedizolid phosphate,11476460,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Telotristat etiprate,25253377,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Tenapanor hydrochloride,78131177,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tepotinib hydrochloride,46700774,Ambiguous,7,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tivozanib hydrochloride,11547978,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Triheptanoin,69286,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Trilaciclib dihydrochloride,124081865,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Tucatinib,51039094,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ubrogepant,68748835,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Umbralisib tosylate,86707828,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Umeclidinium bromide,11519069,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Upadacitinib,58557659,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Uridine triacetate,20058,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Valbenazine tosylate,92042922,Ambiguous,4,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Venetoclax,49846579,vLess,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vericiguat,54674461,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vibegron,44472635,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vorapaxar sulfate,10077129,vNo,0,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Vosoritide,119058036,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Voxelotor,71602803,vNo,0,2,4,Aldehyde; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,1,1
+Betrixaban,10275777,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Remdesivir,121304016,vLess,3,1,2,Furan,0,0,0,0,0,0,1,0,0,0,0,0,0
+Lefamulin acetate,86346053,Ambiguous,3,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Brilliant blue g,61363,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Amifampridine phosphate,9920716,Ambiguous,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Omadacycline tosylate,54746485,Ambiguous,3,2,4,Michael acceptor; Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,1,0,0,1
+Oritavancin diphosphate,53297457,Ambiguous,4,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Tafenoquine succinate,163761,Ambiguous,5,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Choline c-11,449688,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Copper cu-64 dotatate,124220636,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Gallium dotatate ga-68,131634491,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Gallium ga-68 edotreotide,71661158,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Florbetaben f-18,11501341,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florbetapir f-18,24822371,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Flortaucipir f-18,70957463,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Fluciclovine f-18,450601,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Fluorodopa f-18,56494,vNo,0,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Fluoroestradiol f-18,10869981,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Flutemetamol f-18,15950376,vNo,0,1,2,Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,0,0,0,0,1
+Gallium ga-68 gozetotide,154572876,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
+Ioflupane i-123,3086674,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lutetium lu 177 dotatate,76966897,Ambiguous,6,2,4,Carboxylic acid (acyl glucuronide precursor); Phenol (quinone-imine precursor),0,0,0,0,0,0,0,0,1,0,0,0,1
+Sodium fluoride f-18,23690531,vNo,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Piflufolastat f-18,52950901,vNo,0,1,2,Carboxylic acid (acyl glucuronide precursor),0,0,0,0,0,0,0,0,1,0,0,0,0
