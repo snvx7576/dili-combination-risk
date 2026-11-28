@@ -301,10 +301,13 @@ def _render_rows():
                 "Frequency", options=[1, 2, 3, 4, 5],
                 format_func=lambda n: FREQ_LABELS[n],
                 key=f"freq_{rid}", label_visibility="collapsed")
-            with st.expander("Advanced: offset start time"):
-                st.number_input(
-                    "First dose at (h)", min_value=0.0, max_value=23.0,
-                    step=0.5, format="%.1f", key=f"off_{rid}")
+            st.number_input(
+                "Starts later by (hours)", min_value=0.0, max_value=23.0,
+                step=0.5, format="%.1f", key=f"off_{rid}",
+                help="0 means this medicine is taken at the same time "
+                     "as the first one. Increase it to space the "
+                     "medicines out through the day.")
+            st.caption("Start delay: 0 = taken with the first medicine.")
         with c4:
             st.button("✕", key=f"del_{rid}",
                       disabled=len(st.session_state.row_ids) <= 1,
@@ -349,24 +352,36 @@ def _chart(times, L, contrib, markers, windows):
     for key, curve in contrib:
         fig.add_trace(go.Scatter(
             x=times, y=curve, mode="lines",
-            name=DRUGS[key]["display"], opacity=0.55,
+            name=DRUGS[key]["display"].split(",")[0] + " alone",
+            opacity=0.55,
             fill="tozeroy", line=dict(width=1.5)))
     fig.add_trace(go.Scatter(
-        x=times, y=L, mode="lines", name="Combined load L(t)",
+        x=times, y=L, mode="lines", name="Total liver load (all together)",
         line=dict(width=3.5, color="#111111")))
+    Ly = [float(v) for v in L]
+    pi = int(max(range(len(Ly)), key=lambda i: Ly[i]))
+    fig.add_trace(go.Scatter(
+        x=[times[pi]], y=[Ly[pi]], mode="markers",
+        marker=dict(size=11, color="#c62828", symbol="circle"),
+        name="Peak: medicines overlap most here", showlegend=False))
+    fig.add_annotation(
+        x=times[pi], y=Ly[pi], ax=60, ay=-45, showarrow=True,
+        arrowcolor="#c62828",
+        text=f"Peak {Ly[pi]:.2f}: the medicines overlap most here")
     for a, b in windows:
         fig.add_vrect(x0=a, x1=b, fillcolor="red", opacity=0.12,
                       line_width=0)
     fig.add_hline(y=THRESHOLD, line_dash="dash", line_color="red",
-                  annotation_text="Hepatotoxic Threshold (0.75)",
+                  annotation_text="Danger line (0.75)",
                   annotation_position="top left")
     for tk in sorted({t for t, _name in markers}):
         fig.add_vline(x=tk, line_dash="dot", line_color="gray",
                       line_width=1)
     fig.update_layout(
+        title="How the liver load rises and falls over 24 hours",
         hovermode="x unified", height=460,
         xaxis_title="Hours after first dose",
-        yaxis_title="Hepatotoxic load L(t)",
+        yaxis_title="Liver load",
         yaxis=dict(rangemode="tozero"),
         legend=dict(orientation="h", yanchor="bottom", y=1.02,
                     xanchor="left", x=0),
@@ -479,6 +494,28 @@ def main():
         "Add your medicines below, with the dose in mg and how many "
         "times a day each is taken. You get one clear answer: how much "
         "stress the combination puts on the liver, and when.")
+
+    st.markdown(
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;'
+        'margin:4px 0 16px;">'
+        '<div style="flex:1;min-width:180px;border:1px solid '
+        'rgba(128,128,128,.35);border-radius:12px;padding:10px 14px;">'
+        '<b>1. Pick your medicines</b><br><span style="font-size:13px;'
+        'opacity:.8;">Add what you took, the dose in mg, and how '
+        'often.</span></div>'
+        '<div style="flex:1;min-width:180px;border:1px solid '
+        'rgba(128,128,128,.35);border-radius:12px;padding:10px 14px;">'
+        '<b>2. See the danger time</b><br><span style="font-size:13px;'
+        'opacity:.8;">Red time means the liver is under heavy load. '
+        'Green time is calm.</span></div>'
+        '<div style="flex:1;min-width:180px;border:1px solid '
+        'rgba(128,128,128,.35);border-radius:12px;padding:10px 14px;">'
+        '<b>3. Space them out</b><br><span style="font-size:13px;'
+        'opacity:.8;">Below, we show one safer gap between doses, in '
+        'plain words.</span></div>'
+        '</div>',
+        unsafe_allow_html=True)
+    st.markdown("#### Your medicines")
 
     _init_state()
     _render_rows()
@@ -623,21 +660,27 @@ def main():
                 + (f" via {tm['enzyme']}" if tm["enzyme"] else "")
                 + (", more toxic than the parent drug."
                    if tm["more_toxic"] == "YES" else ".")
-                + f" Model v2.1 raises this medicine's stress weight "
+                + f" The model raises this medicine's stress weight "
                   f"x{factor:.2f} because of it.")
     if any_adjusted:
         notes.append(
             "Metabolite adjustment is ON: a medicine that turns into "
             "a more toxic metabolite inside the body gets a higher "
             "stress weight (x1.25), and one with a toxic metabolite "
-            "gets x1.10. This is the project's Model v2.1 rule.")
+            "gets x1.10. This is the project's metabolite "
+            "adjustment rule.")
     if notes:
-        with st.expander("Notes"):
+        st.subheader("Good to know about these medicines")
+        with st.container():
             for n in notes:
                 st.markdown(f"- {n}")
 
-    # ---- The science, one tap away ------------------------------------
-    with st.expander("See the science (graph, numbers, per-drug detail)"):
+    # ---- The science, always open -------------------------------------
+    st.divider()
+    st.subheader("The full picture: graph, numbers and medicine details")
+    st.caption("Everything below stays open on the page. Nothing here "
+               "is hidden behind a dropdown.")
+    with st.container():
         m1, m2, m3, m4, m5 = st.columns(5)
         m1.metric("Peak load (metabolite-adjusted)", f"{lmax:.3f}")
         m2.metric("Peak load (base model)", f"{base_lmax:.3f}")
@@ -647,6 +690,14 @@ def main():
                   f"{time_above:.2f}")
         st.plotly_chart(_chart(times, L, contrib, markers, windows),
                         use_container_width=True)
+        st.markdown(
+            "**How to read this graph, in plain words:** the thick "
+            "black line is the total load on the liver. The coloured "
+            "lines show what each medicine would do on its own. Where "
+            "the black line rises above the red dashed danger line, "
+            "the liver is in the danger zone, and the pink band marks "
+            "those hours. The marked peak is where the medicines "
+            "overlap the most.")
         dose_note = "; ".join(
             f"{DRUGS[e['drug_key']]['display'].split(',')[0]} at "
             + ", ".join(f"{t:g} h" for t in dose_times(e["freq"],
@@ -689,26 +740,26 @@ def main():
         st.dataframe(pd.DataFrame(rows), use_container_width=True)
 
     st.caption(
-        "Model: Layer 2 v2.1 (metabolite-adjusted) of HepMAT, from "
-        "the project 'An Artificial Intelligence Framework for "
-        "Multi-Drug Combination Hepatotoxicity Risk Prediction "
-        "with Machine Learning, Structural Alerts and Temporal "
-        "Pharmacokinetic Modelling'. Model v2.1 uplift rule: a drug whose toxic "
-        "metabolite is more toxic than the parent has its hazard "
-        "multiplied by 1.25, and a drug with any other toxic "
-        "metabolite by 1.10; the adjusted hazard is capped at 1.0, so "
-        "the uplift does not change drugs already at maximum hazard. "
-        "Hazards from "
-        "DILIrank 2.0 (FDA LTKB); pharmacokinetic values from the "
-        "project Fixed Database: PK table v1 (file 10, label-sourced "
-        "values with sources, midpoints derived where labels give "
-        "ranges), metabolite list (file 11), structural alert notes "
-        "from 08_Structure_Alert_Matches_v1.csv; the original demo "
-        "drugs keep their project-verified v0.1 fixed points. Dose "
-        "fractions use labelled reference maxima for normalisation "
-        "only. Cyanocobalamin is the zero-hazard control: its hazard "
-        "is 0, so it never changes L(t). Research prototype only, not "
-        "for clinical decision-making.")
+        "About this tool: HepMAT comes from the research project "
+        "'An Artificial Intelligence Framework for Multi-Drug "
+        "Combination Hepatotoxicity Risk Prediction with Machine "
+        "Learning, Structural Alerts and Temporal Pharmacokinetic "
+        "Modelling'. How the score is built: each medicine's hazard "
+        "comes from DILIrank 2.0 (FDA Liver Toxicity Knowledge "
+        "Base). A medicine that turns into a more toxic breakdown "
+        "product (metabolite) inside the body has its hazard raised "
+        "by 1.25 times, and one with any other toxic metabolite by "
+        "1.10 times; the raised hazard is capped at the maximum, so "
+        "the adjustment does not change medicines already at maximum "
+        "hazard. Pharmacokinetic and metabolite values come from "
+        "the project's fixed database of label-sourced values (where "
+        "a label gives a range, its midpoint is used), and the "
+        "structural alert notes come from the project's alert "
+        "matching. Dose fractions use labelled reference maxima for "
+        "normalisation only. Cyanocobalamin (vitamin B12) is the "
+        "zero-hazard control: its hazard is 0, so it never changes "
+        "the result. Research prototype only, not for clinical "
+        "decision-making.")
 
 
 if __name__ == "__main__":
